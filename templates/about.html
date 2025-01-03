@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="heading"> About </h2>
+    <p> The sign language detector helps to detect the 
+        sign langiuagw and translate it,  it have two features for noe  </p>
+
+    <h3> Video sign Detection </h3>
+    <p> video sign detection helps for like the live detection of the sign </p>
+    
+    <button id="start-button" class="button" onclick="location.href='/video'"> try it here 📹 </button>
+
+    <h3> Image sign Detection </h3>
+    <p> Image sign detection helps for like the image detection of the sign </p>
+    <button id="stop-button" class="button" onclick="location.href='/image'"> try it here 🖼️ </button>
+    <br>
+{% endblock %}

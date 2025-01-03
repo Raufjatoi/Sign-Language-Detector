@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="heading">Video Sign Detection</h2>
+
+    <div class="video-container">
+        <img id="video-stream" src="/video_feed" alt="Video Feed" style="max-width: 100%; border: 2px solid #ccc;">
+        <canvas id="output-canvas" style="display: none;"></canvas>
+    </div>
+    <br>
+
+    <button id="stop-button" class="button" onclick="location.href='/image'">Try image detection here 🖼️</button>
+
+    <br>
+
+    <script type="text/javascript">
+        // If needed, add canvas overlay or custom interactivity with the live feed
+        const canvasElement = document.getElementById('output-canvas');
+        const canvasCtx = canvasElement.getContext('2d');
+        
+        // Placeholder for potential overlay logic on the video stream
+        console.log("Canvas ready for overlays.");
+    </script>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="heading"> Home </h2>
+    <p style="text-align: center;"> Welcome to the sign language detector. </p>
+
+    <button id="start-button" class="button" onclick="location.href='/video'"> Video 📹 </button>
+    <div style="margin: 10px 0;"></div>
+    <button id="stop-button" class="button" onclick="location.href='/image'"> Image 🖼️ </button>
+    <br> <br> <br> <br>
+{% endblock %}

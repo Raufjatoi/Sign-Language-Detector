@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="heading">Image Sign Detection</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file-upload" class="custom-file-upload">
+            Upload an image 🖼️
+        </label>
+        <input id="file-upload" type="file" name="file" accept="image/*" required>
+        <button type="submit" class="button">Detect</button>
+    </form>
+
+    {% if uploaded_image %}
+        <h3>Uploaded Image:</h3>
+        <img src="{{ uploaded_image }}" alt="Uploaded Image">
+
+        <h3>Processed Image:</h3>
+        <img src="{{ uploaded_image }}" alt="Processed Image">
+        
+    {% endif %}
+    <br> <br> <br> <br>
+{% endblock %}
